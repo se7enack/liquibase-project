@@ -7,6 +7,8 @@
 brew install liquibase
 ```
 
+##### Edit liquibase.properties to point to correct path of mysql-connector-j-8.2.0.jar and change password if you so wish.
+
 
 ## Create mysql endpoint
 ```bash
