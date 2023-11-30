@@ -1,15 +1,19 @@
 # liquibase-project
 
+
+
+## Install Liquibase
+```bash
+brew install liquibase
+```
+
+
 ## Create mysql endpoint
 ```bash
 docker build . -t mysqlvm
 docker run -it -p 3306:3306 mysqlvm
 ```
 
-## Install Liquibase
-```bash
-brew install liquibase
-```
 
 ## Connect to SQL
 ```bash
