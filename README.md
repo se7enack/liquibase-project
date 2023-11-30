@@ -34,3 +34,5 @@ SHOW TABLES;
 SELECT * FROM databasechangelog;
 ```
 
+## Example
+<img src="https://github.com/se7enack/liquibase-project/blob/main/example.png?raw=true" width="1200">
