@@ -7,8 +7,7 @@
 brew install liquibase
 ```
 
-##### Edit liquibase.properties to point to correct path of mysql-connector-j-8.2.0.jar and change password if you so wish.
-
+##### Edit liquibase.properties to point to correct path of mysql-connector-j-8.2.0.jar and change password to match Dockerfile
 
 ## Create mysql endpoint
 ```bash
@@ -18,6 +17,7 @@ docker run -it -p 3306:3306 mysqlvm
 
 
 ## Connect to SQL
+##### Password in Dockerfile should match liquibase.properties
 ```bash
 mysql -u root -p
 ```
