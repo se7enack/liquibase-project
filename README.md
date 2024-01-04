@@ -12,7 +12,7 @@ brew install liquibase
 ## Create mysql endpoint
 ```bash
 docker build . -t mysqlvm
-docker run -it -p 3306:3306 mysqlvm
+docker run -d -p 3306:3306 mysqlvm
 ```
 
 
@@ -38,6 +38,11 @@ liquibase update
 ```SQL
 SHOW TABLES;
 SELECT * FROM databasechangelog;
+```
+
+## To shut down MySQL
+```
+docker ps | grep mysqlvm | awk '{print $1}' | xargs docker kill
 ```
 
 ## Example
